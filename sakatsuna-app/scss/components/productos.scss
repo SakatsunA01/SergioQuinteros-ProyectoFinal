@@ -1,0 +1,33 @@
+.productos_box{
+    display: flex;
+    flex-direction: column;
+    background-color: nth($violetas, 1);
+    width: 15vw;
+    margin: 20px;
+    border-radius: 16px;
+    img{
+        width: 15vw;
+    }
+}
+.productos_cont{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12vh;
+    padding: 1vh;
+    background-color: rgba(nth($pastelNeon, 3), $alpha: .5);
+    border-radius: 16px;
+}
+.btnsr{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    button{
+        border: none;
+        height: 3vh;
+        width: 2vw;
+    }
+    input{
+        height: 2vh;
+        border: none;
+    }
+}

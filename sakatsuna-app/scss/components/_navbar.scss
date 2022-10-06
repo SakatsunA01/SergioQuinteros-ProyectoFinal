@@ -1,0 +1,26 @@
+@import "../base/colores";
+*{
+    color: nth($marron , 4);
+}
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: nth($marron , 1);
+    height: 8vh;
+    padding: 0 50px;
+}
+.NavBar_Logo{
+    font-size: 2.5rem;
+}
+.NavBar_links{
+    list-style: none;
+    display: flex;
+    li{
+        font-size: 1.5rem;
+        margin: 0 20px;
+    }
+}
+.NavBar_Cart{
+    font-size: 1.5em;
+}

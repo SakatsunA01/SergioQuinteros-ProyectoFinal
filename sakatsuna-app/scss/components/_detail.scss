@@ -1,0 +1,31 @@
+.Detail_container{
+    display: flex;
+    background-color: rgba(nth($pastelNeon, 3), $alpha: .5);
+    justify-content: space-around;
+    margin: 10vh;
+}
+.Detail_img{
+    margin: 2vh;
+    height: 30vh;
+    width: 30vw;
+    background-color: black;
+}
+.Detail_detalle{
+    display: flex;
+    flex-direction: column;
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    button{
+        height: 5vh;
+        width: 100%;
+        border: none;
+        border-radius: 16px;
+        margin: 10px;
+        font-size: 1.5rem;
+        background-color: nth($marron , 1);
+    }
+}

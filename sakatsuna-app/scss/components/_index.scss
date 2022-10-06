@@ -1,0 +1,24 @@
+.top_3{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top_3_cont{
+    padding: 2vh;
+    background-color: nth($marron , 2);
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    img{
+        margin: 0 20px;
+        height: 30vh;
+    }
+}
+.index_title{
+    font-size: 2rem;
+    text-align: center;
+}
+.black{
+    background-color: black;
+}

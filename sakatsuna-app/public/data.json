@@ -1,0 +1,74 @@
+{
+    "remeras":[
+        {
+            "id":1,
+            "Precio": 2500,
+            "Nombre": "Remera tipo 1",
+            "Stock": 23,
+            "ImgUrl":"./img/rem_prod.jpg"
+        },
+        {
+            "id":2,
+            "Precio": 2500,
+            "Nombre": "Remera tipo 2",
+            "Stock": 13,
+            "ImgUrl":"./img/rem_prod2.jpg"
+        },
+        {
+            "id":3,
+            "Precio": 2300,
+            "Nombre": "Remera tipo 3",
+            "Stock": 20,
+            "ImgUrl":"./img/rem_prod3.jpg"
+        },
+        {
+            "id":4,
+            "Precio": 2600,
+            "Nombre": "Remera tipo 4",
+            "Stock": 20,
+            "ImgUrl":"./img/rem_prod4.jpg"
+        },
+        {
+            "id":5,
+            "Precio": 2500,
+            "Nombre": "Remera tipo 5",
+            "Stock": 20,
+            "ImgUrl":"./img/rem_prod4.jpg"
+        },
+        {
+            "id":6,
+            "Precio": 2100,
+            "Nombre": "Remera tipo 6",
+            "Stock": 10,
+            "ImgUrl":"./img/rem_prod6.jpg"
+        },
+        {
+            "id":7,
+            "Precio": 2100,
+            "Nombre": "Remera tipo 7",
+            "Stock": 23,
+            "ImgUrl":"./img/rem_prod7.jpg"
+        },
+        {
+            "id":8,
+            "Precio": 1500,
+            "Nombre": "Remera tipo 8",
+            "Stock": 23,
+            "ImgUrl":"./img/rem_prod8.jpg"
+        }
+    ],
+    "Img":[
+        {
+            "Nombre":"Top3_1",
+            "ImgUrl":"./img/rem_top3.jpg"
+        },
+        {
+            "Nombre":"Top3_2",
+            "ImgUrl":"./img/rem2_top3.jpg"
+        },
+        {
+            "Nombre":"Top3_3",
+            "ImgUrl":"./img/rem3_top3.jpg"
+        }
+    ]
+}
