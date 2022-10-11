@@ -9,6 +9,7 @@
   background-color: #F3C5C5;
   height: 8vh;
   padding: 0 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .NavBar_Logo {
@@ -63,6 +64,7 @@
   width: 15vw;
   margin: 20px;
   border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .productos_box img {
   width: 15vw;
@@ -75,12 +77,20 @@
   padding: 1vh;
   background-color: rgba(148, 218, 255, 0.5);
   border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.productos_cont h3 {
+  font-size: 1.5rem;
+  margin: 10px 20px;
+}
+.productos_cont p {
+  margin: 0 20px;
 }
 
 .btnsr {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .btnsr button {
   border: none;
@@ -88,7 +98,7 @@
   width: 2vw;
 }
 .btnsr input {
-  height: 2vh;
+  height: 2.8vh;
   border: none;
 }
 
@@ -97,6 +107,8 @@
   background-color: rgba(148, 218, 255, 0.5);
   justify-content: space-around;
   margin: 10vh;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .Detail_img {

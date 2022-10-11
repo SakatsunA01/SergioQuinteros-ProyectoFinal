@@ -5,6 +5,7 @@
     width: 15vw;
     margin: 20px;
     border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     img{
         width: 15vw;
     }
@@ -16,18 +17,26 @@
     padding: 1vh;
     background-color: rgba(nth($pastelNeon, 3), $alpha: .5);
     border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    h3{
+        font-size: 1.5rem;
+        margin: 10px 20px;
+    }
+    p{
+        margin: 0 20px;
+    }
 }
 .btnsr{
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 20px 0;
     button{
         border: none;
         height: 3vh;
         width: 2vw;
     }
     input{
-        height: 2vh;
+        height: 2.8vh;
         border: none;
     }
 }
