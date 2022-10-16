@@ -1,13 +1,13 @@
 
 const Detalle = ({detail})=>{
     return(
-        <section key={detail.id} className="Detail_container">
+        <section key={detail.key} className="Detail_container">
             <div className="Detail_img">
-                <img src={detail.ImgUrl} alt={detail.Nombre}/>
+                <img src={`../img/${detail.url}`} alt={detail.name}/>
             </div>
             <div className="Detail_detalle">
-                <h1>{detail.Nombre}</h1>
-                <h2>{detail.Precio}</h2>
+                <h1>{detail.name}</h1>
+                <h2>{detail.precio}</h2>
                 <p>Lavar con agua fria <br/>
                     -100% Algodon<br/>
                     -Para cualquier tipo de uso</p>

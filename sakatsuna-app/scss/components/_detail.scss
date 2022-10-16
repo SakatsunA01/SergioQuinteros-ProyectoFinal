@@ -10,7 +10,6 @@
     margin: 2vh;
     height: 30vh;
     width: 30vw;
-    background-color: black;
 }
 .Detail_detalle{
     display: flex;
@@ -29,5 +28,6 @@
         margin: 10px;
         font-size: 1.5rem;
         background-color: nth($marron , 1);
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     }
 }

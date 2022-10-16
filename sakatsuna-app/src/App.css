@@ -42,6 +42,7 @@
   display: flex;
   align-items: center;
   border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .top_3_cont img {
   margin: 0 20px;
@@ -115,7 +116,6 @@
   margin: 2vh;
   height: 30vh;
   width: 30vw;
-  background-color: black;
 }
 
 .Detail_detalle {
@@ -136,6 +136,7 @@
   margin: 10px;
   font-size: 1.5rem;
   background-color: #F3C5C5;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 /*# sourceMappingURL=App.css.map */

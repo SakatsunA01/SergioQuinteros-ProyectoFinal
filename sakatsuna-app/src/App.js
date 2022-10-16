@@ -4,17 +4,11 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import { useEffect, useState } from 'react';
 import ItemListContainer from './components/ItemListContainer';
 import Index from "./components/Index"
-import ProductoDetalle from './components/ProductDetail';
+import Ninos from "./components/Ninos"
+import Adultos from './components/Adultos';
+import ProductDetailContainer from './components/ProductDetailContainer';
 
 function App() {
-  const [esto, setEsto] = useState([])
-    useEffect(()=>{
-        const url = "./data.json"
-        fetch(url)
-            .then((res)=> res.json())
-            .then((data)=>setEsto(data.remeras))
-            .catch((err)=> console.log(err))
-    },[])
   return (
     <Router>
       <Navbar/>
@@ -25,13 +19,10 @@ function App() {
           <ItemListContainer/>
         </>
       }/>
-      <Route exact path='/Productos' element={<ItemListContainer/>}/>
-      <Route exact path='/category/ninos' element={<ItemListContainer/>}/>
-      <Route exact path='/category/adultos' element={<ItemListContainer/>}/>
-      <Route exact path='/detail/:id' element={
-      <ProductoDetalle data={esto}/>
-      }/>
-
+      <Route exact path='/Productos' element={<ItemListContainer/>} />
+      <Route exact path='/category/ninos' element={<Ninos/>} />
+      <Route exact path='/category/adultos' element={<Adultos/>} />
+      <Route exact path='/detail/:name' element={<ProductDetailContainer/>} />
       </Routes>
     </Router>
     
