@@ -33,6 +33,7 @@ const Cart = ()=>{
         const ordenUsuarios = collection(db, "usuarios")
         addDoc(ordenUsuarios, usuarios)
         .then(({id}) => console.log("id compra:", id))
+        borrarCarrito()
     }
 
     const borrarcarrito = ()=>{
