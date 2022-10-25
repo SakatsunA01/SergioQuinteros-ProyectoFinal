@@ -10,17 +10,21 @@ const Navbar = ()=>{
             </div>
             <div>
                 <ul className="NavBar_links">
-                    <Link to={'/Productos'}>
-                        <li>Productos</li>
-                    </Link>
+                    <div className="NavBar_Cat">
+                        <ul>
+                        <Link to={'/Productos'}>
+                            <span>Productos</span>
+                        </Link>
+                        <Link to={'/ninos'}>
+                            <li>Niños</li>
+                        </Link>
+                        <Link to={'/adulto'}>
+                            <li>Adultos</li>
+                        </Link>
+                        </ul>
+                    </div>
                     <li>Ofertas</li>
                     <li>Sobre Nosotros</li>
-                    <Link to={'/category/ninos'}>
-                        <li>Niños</li>
-                    </Link>
-                    <Link to={'/category/adultos'}>
-                        <li>Adultos</li>
-                    </Link>
                 </ul>
             </div>
             <div className="NavBar_Cart">

@@ -12,8 +12,10 @@ const Index = ()=>{
                     })}
             </div>
         </section>
-        <section className="index_title">
-            <h1>Productos</h1>
+        <section className="index_title_cont">
+            <div className="index_title">
+                <h1>Productos</h1>
+            </div>
         </section>
     </>
     )

@@ -1,23 +1,64 @@
 .productos_box{
     display: flex;
     flex-direction: column;
-    background-color: nth($violetas, 1);
+    background-color: nth($darkV , 5);
     width: 15vw;
     margin: 20px;
-    border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transform: scale(1);
+    transition: all 0.3s;
+    h3{
+        width: 85%;
+        text-align: center;
+        border-bottom: 1px solid nth($marron , 4);
+        color: nth($popu2 , 1);
+    }
+    p{
+        color: nth($popu2 , 1);
+    }
+    &:hover{
+        box-shadow: rgba(nth($darkV, 1), 0.19) 0px 10px 20px;
+        transform: scale(1.03);
+        
+    }
     img{
         width: 15vw;
     }
+    button{
+        font-size: 1.4rem;
+        border: none;
+        margin: 10px 0 0 0;
+        height: 3vh;
+        width: 100%;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        &:hover{
+            color: nth($popu2 , 4);
+            background-color: nth($verdeneon , 1);
+        }
+    }
 }
+.productos{
+    margin: 10vh;
+    padding: 1vh;
+    /* glass */
+    background: rgba(255, 255, 255, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* glass */
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
 .productos_cont{
     display: flex;
     flex-wrap: wrap;
-    margin: 12vh;
-    padding: 1vh;
-    background-color: rgba(nth($pastelNeon, 3), $alpha: .5);
-    border-radius: 16px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    justify-content: center;
     h3{
         font-size: 1.5rem;
         margin: 10px 20px;
@@ -25,6 +66,7 @@
     p{
         margin: 0 20px;
     }
+    
 }
 .btnsr{
     display: flex;

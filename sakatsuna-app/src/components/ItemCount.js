@@ -1,32 +1,38 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ItemCount = ({initial, stock, onAdd})=>{
-    const [cantidad, setCantidad] = useState(initial)
+	const [count, setCount] = useState(parseInt(initial));
 
-    const agregar = () =>{
-        if (cantidad < stock){
-            setCantidad(cantidad + 1)
-        }
-    }
-    const restar = () =>{
-        if (cantidad > 1){
-            setCantidad(cantidad - 1)
-        }
-    }
-    return(
-        <div>
-            {stock ? (
-            <>
-                <div className="btnsr">
-                    <button id="btns" onClick={agregar}>+</button>
-                    <input type="number" value={stock ? cantidad : 0}></input>
-                    <button id="btnr" onClick={restar}>-</button>
-                </div>
-            </>
-            )
-            :<p>hola</p>}
-        </div>
-    )
-}
+	const decrease = () => {
+		setCount(count - 1);
+	};
+
+	const increase = () => {
+		setCount(count + 1);
+	};
+
+	useEffect(() => {
+		setCount(parseInt(initial));
+	}, [initial]);
+
+	return (
+		<div className="counter">
+			<div className="counter_btn">
+				<button disabled={count <= 1} onClick={decrease}>
+					-
+				</button>
+				<span>{count}</span>
+				<button disabled={count >= stock} onClick={increase}>
+					+
+				</button>
+			</div>
+			<div className="counter_enviar">
+				<button disabled={stock <= 0} onClick={() => onAdd(count)}>
+					Agregar al carrito
+				</button>
+			</div>
+		</div>
+	);
+};
 
 export default ItemCount

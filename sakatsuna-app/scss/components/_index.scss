@@ -1,13 +1,20 @@
+
 .top_3{
-    margin-top: 2vh;
+    margin: 10vh 0 3vh 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 .top_3_cont{
     padding: 2vh;
-    background-color: nth($marron , 2);
+    /* glass */
+    background: rgba(255, 255, 255, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* glass */
     display: flex;
     align-items: center;
     border-radius: 16px;
@@ -17,9 +24,21 @@
         height: 30vh;
     }
 }
+.index_title_cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .index_title{
+    position: relative;
+    bottom: -30px;
     font-size: 2rem;
     text-align: center;
+    h1{
+        margin: 0;
+        border-bottom: 2.5px solid nth($marron , 4);
+        width: 15vw;
+    }
 }
 .black{
     background-color: black;

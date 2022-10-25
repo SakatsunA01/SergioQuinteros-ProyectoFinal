@@ -1,0 +1,103 @@
+@import "../base/colores";
+
+.cart_text{
+    width: 70%;
+    margin: 30vh;
+    padding: 5vh;
+    text-align: center;
+    /* glass */
+    background: rgba(255, 255, 255, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* glass */
+    p{
+        font-size: 2.5rem;
+    }
+    a{
+        font-size: 3rem;
+        text-decoration: none;
+        transform: scale(1);
+        transition: all 0.5s;
+        &:hover{
+            padding: 5px;
+            color: nth($popu2 , 1);
+            background: rgba(nth($popu1, 4),0.8);
+            border-radius: 16px;
+        }
+    }
+}
+
+.cart_cont{
+    width: 80%;
+    margin: 10vh;
+    padding: 5vh;
+    p{
+        font-size: 1.5rem;
+        color: nth($popu2 , 1);
+    }
+    h4{
+        text-align: center;
+        color: nth($popu2 , 1);
+        font-size: 3rem;
+        background: rgba(nth($popu1 , 4 ), 0.86);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 16px;
+    }
+    button{
+        border-radius: 16px;
+        font-size: 1.4rem;
+        border: none;
+        margin: 0 0 0 0;
+        height: 4vh;
+        width: 30vw;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all 0.3s;
+            background-color: #F0F0F0;
+            color: nth($marron, 4);
+        &:hover{
+            color: nth($popu2 , 1);
+            background-color: nth($rojo , 1);
+        }
+    }
+}
+#cart_btn_compra{
+    width: 48%;
+    height: 10vh;
+    font-size: 2rem;
+    margin: 10px;
+    &:hover{
+        color: nth($darkB , 4);
+        background-color: nth($verdeneon , 1);
+    }
+}
+#cart_btn_borrar{
+    width: 48%;
+    height: 10vh;
+    font-size: 2rem;
+    margin: 10px;
+    &:hover{
+        color: nth($popu2 , 1);
+        background-color: nth($rojo , 1);
+    }
+}
+.cart_box{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    /* glass */
+    background: rgba(nth($darkV , 5 ), 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* glass */
+    border-radius: 16px;
+}
